@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="RogueSharp" />
+    <None Remove="RLNET" />
+    <None Remove="terminal8x8.webp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="RogueSharp" Version="4.2.0" />
+    <PackageReference Include="RLNET" Version="1.0.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="terminal8x8.webp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+</Project>
